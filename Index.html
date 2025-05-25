@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="./Assest/Style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="resumen">
+      <h2>Resumen de Tareas</h2>
+      <p>Total: <span id="totalTareas">0</span></p>
+      <p>Completadas: <span id="tareasCompletadas">0</span></p>
+    </section>
+
+    <section class="tareas">
+      <h2>Lista de Tareas</h2>
+      <div class="input-group">
+        <input type="text" id="nuevaTarea" placeholder="Descripción de la tarea"/>
+        <button onclick="agregarTarea()">Agregar tarea</button>
+      </div>
+      <ul id="listaTareas"></ul>
+    </section>
+  </main>
+
+  <script src="./Assest/Script.js"></script>
+</body>
+</html>
