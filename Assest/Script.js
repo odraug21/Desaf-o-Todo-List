@@ -13,7 +13,7 @@ function renderTareas() {
     li.className = tarea.completado ? "realizada" : "";
 
     const span = document.createElement("span");
-    span.textContent = tarea.descripcion;
+    span.textContent = `#${tarea.id} - ${tarea.descripcion}`;
 
     const botones = document.createElement("div");
     botones.className = "botones";
